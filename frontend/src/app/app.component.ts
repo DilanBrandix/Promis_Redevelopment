@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { SlideMenuModule } from 'primeng/slidemenu';
 
 @Component({
   selector: 'app-root',
