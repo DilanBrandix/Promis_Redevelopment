@@ -1,40 +1,30 @@
-<form (ngSubmit)="onSubmit()" >
+<div class="card flex justify-content-center" class="card">
+  <p-card>
+    <p class="header">WELCOME TO PROMIS SX</p>
+    <div class="username">
+      <input
+        type="text"
+        pInputText
+        [(ngModel)]="value"
+        placeholder="Username"
+        class="w-full"
+      />
+    </div>
+    <div>
+      <p-password
+        id="password1"
+        type="password"
+        class="w-full"
+        [feedback]="false"
+        placeholder="Password"
+        styleClass="p-password p-component p-inputwrapper p-input-icon-right"
+        [style]="{ width: '100%' }"
+        [inputStyle]="{ width: '100%' }"
+        [toggleMask]="true"
+      ></p-password>
+    </div>
     <div class="card flex justify-content-center">
-        <p-card header="ProMIS-SX">
-            <div class="card flex justify-content-center">
-                <p-image src="C:\Users\TharukaK\Documents\brandix\New folder\ProMIS-SX 2.0\Promis_Redevelopment\frontend\src\app\image\ltools1.ico" alt="ico" width="250"></p-image>
-            </div>
-        <div class="ui-grid ui-grid-responsive ui-grid-pad ui-fluid" style="margin: 10px 0px">
-            <div class="ui-grid-row">
-               
-                <div class="ui-grid-col-6">
-                    <input pInputText type="text" placeholder="User Name" formControlName="login" class="form-control" name="login">
-                </div>
-                <div class="ui-grid-col-4">
-                    <!-- <div  class="alert alert-danger">
-                        Login is required
-                    </div> -->
-                </div>
-            </div>
-            <div class="ui-grid-row" style="margin-top: 10px;">
-               
-                <div class="ui-grid-col-6">
-                    <input pInputText type="password" placeholder="Password" formControlName="password" class="form-control" name="password">
-                </div>
-                <div class="ui-grid-col-4">
-                    <!-- <div class="alert alert-danger">
-                        Password is required
-                    </div> -->
-                </div>
-            </div>
-            <div class="ui-grid-row" style="margin-top: 10px;">
-                <div class="ui-grid-col-2"></div>
-                <div class="ui-grid-col-6">
-                    <button pButton type="submit" label="Login" style="width: 200px;height: 40px; background-color: brown;" ></button>
-                </div>
-                <div class="ui-grid-col-4"></div>
-            </div>
-        </div>
-    </p-card>
+      <p-button label="Login" (click)="onSubmit()"></p-button>
+    </div>
+  </p-card>
 </div>
-</form>

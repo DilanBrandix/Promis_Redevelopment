@@ -5,25 +5,16 @@
   top: 0;
   left: 0;
   display: flex;
-  justify-content: space-between;
+  justify-content: right;
   align-items: center;
-  padding: 1rem;
+  padding: 0.5rem;
   background-color: #4285f4; /* Set your preferred background color */
   color: white; /* Set your preferred text color */
   width: 100%;
 }
 
-.logo {
-  font-size: 1.5rem;
+.header-description{
+  margin-right: 1%;
   font-weight: bold;
 }
 
-.user-profile {
-  display: flex;
-  align-items: center;
-}
-
-.avatar {
-  margin-left: 1rem;
-  cursor: pointer; /* Optional: Add a cursor pointer for better UX */
-}

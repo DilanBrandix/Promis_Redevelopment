@@ -1,5 +1,6 @@
 import { Component,ViewChild } from '@angular/core';
 import { Sidebar } from 'primeng/sidebar';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-side-bar',
@@ -8,7 +9,17 @@ import { Sidebar } from 'primeng/sidebar';
 })
 export class SideBarComponent {
 
+  constructor(
+    //private loginService: LoginServiceService,
+    private router: Router
+  ) {}
 
-  sidebarVisible: boolean = false;
+  @ViewChild('sidebarRef') sidebarRef!: Sidebar;
+
+    sidebarVisible: boolean = false;
+
+    coHeader(){
+      this.router.navigate(['user']);
+    }
 
 }
