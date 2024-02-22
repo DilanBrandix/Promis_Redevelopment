@@ -1,0 +1,16 @@
+.card{
+  width:30%;
+  margin-left: 35%;
+  margin-right: 35%;
+  margin-top: 10%;
+}
+.username{
+  width: 100%;
+  margin-bottom: 2%;
+}
+.header{
+  font-weight: bold;
+  text-align: center;
+  color: #326fd1;
+}
+

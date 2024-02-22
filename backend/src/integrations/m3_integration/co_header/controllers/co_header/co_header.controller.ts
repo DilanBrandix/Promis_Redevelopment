@@ -29,4 +29,14 @@ export class CoHeaderController {
   viewOperationBreakdownRapid(@Body() data): Promise<any> {
     return this.coHeader.viewOperationBreakdownRapid(data.coId);
   }
+
+  @Post('cdcData')
+  cdcData(@Body() data): Promise<any> {
+    return this.coHeader.scheduleBreakdownDataRapid(data.coId);
+  }
+
+  @Post('savecdcData')
+  savecdcData(@Body() data): Promise<any> {
+    return this.coHeader.saveCDCData(data.coId);
+  }
 }

@@ -6,6 +6,8 @@ import { ConfigModule } from '@nestjs/config';
 import { ScheduleModule } from '@nestjs/schedule';
 import { CoHeaderModule } from './integrations/m3_integration/co_header/co_header.module';
 import { SmvChangeModule } from './integrations/m3_integration/smv_change/smv_change.module';
+import { LogsModule } from './logs/logs.module';
+import { UsersModule } from './user/user.module';
 
 @Module({
   imports: [
@@ -52,6 +54,8 @@ import { SmvChangeModule } from './integrations/m3_integration/smv_change/smv_ch
     }),
     CoHeaderModule,
     SmvChangeModule,
+    LogsModule,
+    UsersModule,
   ],
   controllers: [AppController],
   providers: [AppService],
