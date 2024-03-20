@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./co-header.component.css']
 })
 export class CoHeaderComponent {
-
+  value: string | undefined;
 }

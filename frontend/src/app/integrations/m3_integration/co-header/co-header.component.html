@@ -1,1 +1,24 @@
-<p>co-header works!</p>
+
+<div class="card"><br>
+    <div class="col flex align-items-start  justify-content-start">
+        <div class="flex flex-row gap-2">
+          <label for="userid">CO ID</label>
+          <input pInputText id="userid" aria-describedby="userid-help" [(ngModel)]="value" />
+        </div>
+          <div class="flex flex-row gap-4"><br>
+           <p-button  label="Download"></p-button>
+          </div>
+    </div>
+    <p-splitter [style]="{ height: '470px' }" styleClass="mb-5" layout="vertical">
+        <ng-template pTemplate>
+            <div class="col flex align-items-center justify-content-center">
+                <p>Operation BreackDown</p>
+            </div>
+        </ng-template>
+        <ng-template pTemplate>
+            <div class="col flex align-items-center justify-content-center">
+                <p>Dilivery BreackDown</p>
+            </div>
+        </ng-template>
+    </p-splitter>
+</div>

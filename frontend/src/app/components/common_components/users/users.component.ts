@@ -36,7 +36,7 @@ export class UsersComponent implements OnInit {
   customers: Customer[] = [];
 
   representatives: Representative[] = [];
-
+  value: string | undefined;
   statuses: any[] = [];
 
   loading: boolean = true;
