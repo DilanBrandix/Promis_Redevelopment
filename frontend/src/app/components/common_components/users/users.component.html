@@ -141,10 +141,32 @@
       [(visible)]="visible"
       [style]="{ width: '50vw' }"
     >
-    <div >
-      <input type="text" pInputText formControlName="text"/>
-  </div>
+    <p-splitter [style]="{ height: '450px' }" styleClass="mb-5">
+      <ng-template pTemplate>
+          <div class="col flex align-items-center justify-content-center">
+            <div class="flex flex-column gap-3">
+              <label for="userid">User ID</label>
+              <input pInputText id="userid" aria-describedby="userid-help" [(ngModel)]="value" />
+              <label for="username">User Full Name</label>
+              <input pInputText id="username" aria-describedby="username-help" [(ngModel)]="value" />
+              <label for="department">Department</label>
+              <input pInputText id="department" aria-describedby="department-help" [(ngModel)]="value" />
+              <label for="cluster">Cluster</label>
+              <input pInputText id="cluster" aria-describedby="cluster-help" [(ngModel)]="value" />
+              <p-button label="Create User"></p-button>
+            </div>
+          </div>
+      </ng-template>
+      <ng-template pTemplate>
+          <div class="col flex align-items-center justify-content-center"> 
+        
+          </div>
+      </ng-template>
+   </p-splitter>
 
+
+
+    
     </p-dialog>
   </div>
 </div>

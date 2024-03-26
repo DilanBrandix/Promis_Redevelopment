@@ -110,8 +110,8 @@ import { UsersComponent } from './components/common_components/users/users.compo
     HeaderComponent,
     LoginComponent,
     SideBarComponent,
-    CoHeaderComponent,
     UsersComponent,
+    CoHeaderComponent
   ],
   imports: [
     BrowserModule,

@@ -13,7 +13,7 @@ export class LoginComponent implements OnInit{
   ) {}
   ngOnInit(): void {}
 value = ''
-
+ 
 onSubmit(){
   this.router.navigate(['coHeader']);
 }
